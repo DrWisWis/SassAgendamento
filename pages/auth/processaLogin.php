@@ -16,9 +16,9 @@ if ($result->num_rows > 0) {
         $_SESSION['tipo'] = $usuario['tipo'];
 
         if ($usuario['tipo'] == 'ADMIN') {
-            header("Location: ./admin/dashboard.php");
+            header("Location: ../admin/admin.php");
         } else {
-            header("Location: ./client/cliente.php");
+            header("Location: ../client/cliente.php");
         }
         exit();
     } else {

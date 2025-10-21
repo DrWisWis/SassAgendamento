@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Pagina Principal</h1>
-    <a href="pages/login/login.php">login</a>
+    <a href="pages/auth/login.php">login</a>
+    <a href="pages/auth/register.php">sing up</a>
 </body>
 </html>
