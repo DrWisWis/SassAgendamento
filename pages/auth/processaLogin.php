@@ -12,6 +12,7 @@ if ($result->num_rows > 0) {
     $usuario = $result->fetch_assoc();
 
     if (password_verify($senha, $usuario['senha'])) {
+        $_SESSION['usuario_id'] = $usuario['id'];
         $_SESSION['usuario'] = $usuario['email'];
         $_SESSION['tipo'] = $usuario['tipo'];
 
