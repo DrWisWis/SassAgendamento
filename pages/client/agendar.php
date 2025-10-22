@@ -9,10 +9,10 @@ error_reporting(0);
 include __DIR__ . '/../../conexao.php';
 
 // verifica sessão
-if (!isset($_SESSION['usuario_id']) || !isset($_SESSION['tipo']) || $_SESSION['tipo'] !== 'CLIENTE') {
-    echo json_encode(['success' => false, 'msg' => 'Usuário não autenticado.']);
-    exit;
-}
+    if(!isset($_SESSION['tipo']) || $_SESSION['tipo'] !== 'CLIENTE'){
+        header('Location: ../auth/login.php');
+        exit();
+    }
 
 $input = json_decode(file_get_contents('php://input'), true);
 if (!$input || !isset($input['disponibilidade_id'])) {

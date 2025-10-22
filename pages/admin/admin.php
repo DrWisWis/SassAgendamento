@@ -2,7 +2,7 @@
     session_start();
 
     if(!isset($_SESSION['tipo']) || $_SESSION['tipo'] !== 'ADMIN'){
-        header('Location: /login.php');
+        header('Location: ../auth/login.php');
         exit();
     }
 ?>
