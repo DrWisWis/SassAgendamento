@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 65px;
+    width: 65px;
+    margin-top: -120px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 32px;
+}
+
+p{
+    text-align: center;
+    color: #888888;
+    margin-top: 16px;
+}
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+button{
+    height: 60px;
+    width: 388px;
+    border-radius: 5px;
+}
+
+.login{
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.register{
+    color: black;
+    background-color: white;
+    margin-top: 16px;
+    border: solid 1px black;
+}
