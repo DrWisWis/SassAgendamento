@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Login in</title>
+    <link rel="stylesheet" href="../../src/style/login.css">
 </head>
 <body>
-    <img src="../../src/assets/logo.png" alt="">
-    <h2>Welcome back.</h2>
+    <img src="../../src/assets/logo.png" alt="" class="logo">
+    <h1>Welcome back.</h1>
     <form action="processaLogin.php" method="POST">
-        <label>Email:</label>
-        <input type="email" name="email" required><br><br>
-        <label>Senha:</label>
-        <input type="password" name="senha" required><br><br>
-        <button type="submit">Entrar</button>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="password" name="senha" placeholder="Enter your password" required>
+        <p>Forgot password?</p>
+        <button type="submit">Login</button>
     </form>
+    <a href="../../pages/auth/register.php">
+        <p class="account">Don't have an account? <span>Register Now</span></p>
+    </a>
 </body>
 </html>

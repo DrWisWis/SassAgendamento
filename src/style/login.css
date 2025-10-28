@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin-top: 94px;
+    height: 65px;
+    width: 65px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+input {
+    height: 54px;
+    width: 388px;
+    padding-left: 18px;
+    margin-top: 20px;
+}
+
+form p{
+    margin-top: 20px;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 388px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 32px;
+}
+
+p{
+    color: #888888;
+}
+
+p span{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.account{
+    margin-top: 256px;
+}
