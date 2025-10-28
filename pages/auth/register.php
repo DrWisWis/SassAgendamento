@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../src/style/register.css">
 </head>
 <body>
-    <h2>Create Account</h2>
+    <div class="header">
+        <p><--</p>
+        <h2>Register</h2>
+    </div>
     <form method="POST" action="processaRegister.php">
-        <label>Nome:</label>
-        <input type="text" name="nome" required><br><br>
-
-
-        <label>Email:</label>
-        <input type="email" name="email" required><br><br>
-
-
-        <label>Senha:</label>
-        <input type="password" name="senha" required><br><br>
-
-
-        <button type="submit" name="register">cadastrar</button>
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="password" name="senha" placeholder="senha" required>
+        <button type="submit" name="register" class="register">Register</button>
     </form>
     <p>Ja tem uma conta? <a href="login.php">Login</a></p>
 </body>
