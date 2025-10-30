@@ -39,13 +39,33 @@ nav a {
 }
 
 .agendamento {
-    display: flex;
-    justify-content: center;
     height: 134px;
     width: 388px;
     border: solid 1px #dddddd;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dados{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     gap: 62px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888888;
+}
+
+.info img {
+    height: 18px;
+    width: 18px;
 }
 
 .no-agendamento {

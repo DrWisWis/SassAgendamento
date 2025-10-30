@@ -40,20 +40,25 @@
 
           infoDiv.innerHTML = `
           <div class="agendamento">
-            <div class="info">
-                <img src="../../src/assets/category.png" alt="">
-                <p>${ag.cliente_nome}</p>
+            <div class="dados">
+                <div class="info">
+                    <img src="../../src/assets/category.png" alt="">
+                    <p>${ag.cliente_nome}</p>
+                </div>
+                <div class="info">
+                    <img src="../../src/assets/category.png" alt="">
+                    <p>${ag.data}</p>
+                </div>
+                <div class="info">
+                    <img src="../../src/assets/category.png" alt="">
+                    <p>${ag.horario}</p>
+                </div>
             </div>
-            <div class="info">
-                <img src="../../src/assets/category.png" alt="">
-                <p>${ag.data}</p>
-            </div>
-            <div class="info">
-                <img src="../../src/assets/category.png" alt="">
-                <p>${ag.horario}</p>
-            </div>
+
+            <div class="line"></div>
+            
+            <p class="info">${ag.observacao || 'Nenhuma'}</p>
           </div>  
-                      <p class="info">${ag.observacao || 'Nenhuma'}</p>
           `;
         } else {
           infoDiv.innerHTML = `<p class="no-agendamento">${data.msg}</p>`;
