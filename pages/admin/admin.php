@@ -13,14 +13,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="../../src/style/admin.css">
+    <link rel="stylesheet" href="../../src/style/adm.css">
 </head>
 <body>
     <h1>Dashboard</h1>
     <div class="line"></div>
 
     <div class="card">
-    <p>Próximo Agendamento</p>
+    <p class="next">Próximo Agendamento</p>
     <div id="agendamento-info">
       <p class="no-agendamento">Carregando...</p>
     </div>
@@ -76,14 +76,22 @@
 
     <div class="line"></div>
     <nav>
-        <div class="icon">
+          <div class="icon">
             <img src="../../src/assets/category.png" alt="">
             <p>Dashboard</p>
-        </div>
-        <div class="icon">
+          </div>
+        <a href="calendario.php">
+          <div class="icon">
+            <img src="../../src/assets/setting-2.png" alt="">
+            <p>Calendario</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="icon">
             <img src="../../src/assets/message.png" alt="">
             <p>Mensagens</p>
-        </div>
+          </div>
+        </a>
         <a href="agendaAdmin.php">
             <div class="icon">
                 <img src="../../src/assets/setting-2.png" alt="">

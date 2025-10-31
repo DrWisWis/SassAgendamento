@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.line {
+    height: 1.5px;
+    width: 100%;
+    background-color: #DDDDDD;
+    margin-bottom: 12px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav a {
+    color: #888888;
+}
+
+.card {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.next {
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.agendamento {
+    height: 134px;
+    width: 388px;
+    border: solid 1px #dddddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dados{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888888;
+}
+
+.info img {
+    height: 18px;
+    width: 18px;
+}
+
+.no-agendamento {
+    color: #888;
+    font-style: italic;
+}
+
+    .agenda-container {
+        width: 380px;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .agenda-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        background: #f7f7f7;
+        border-bottom: 1px solid #e0e0e0;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .agenda-list {
+        padding: 10px 16px;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+    .time-label {
+        font-size: 13px;
+        font-weight: 500;
+        color: #555;
+        margin: 20px 0 6px 2px;
+    }
+
+    .appointment {
+        background: #fff;
+        border: 1px solid #e3e3e3;
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .appointment h4 {
+        margin: 0;
+        font-size: 14.5px;
+        color: #222;
+    }
+
+    .appointment p {
+        margin: 3px 0;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .appointment-time {
+        font-size: 12.5px;
+        color: #888;
+        margin-top: 4px;
+    }
