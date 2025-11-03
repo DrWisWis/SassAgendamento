@@ -43,76 +43,11 @@ $admin_id = intval($_SESSION['usuario_id']);
         </div>
     </div>
 
-<script>
-async function carregarAgenda() {
-    try {
-        const response = await fetch('listarAgendamento.php');
-        const data = await response.json();
-        const list = document.getElementById('agenda-list');
-        list.innerHTML = '';
-
-        if (data.success && data.agendamentos.length > 0) {
-            let horaAtual = '';
-            data.agendamentos.forEach(item => {
-                const hora = item.horario.substring(0, 2) + "H";
-                if (hora !== horaAtual) {
-                    horaAtual = hora;
-                    const label = document.createElement('div');
-                    label.className = 'time-label';
-                    label.textContent = hora;
-                    list.appendChild(label);
-                }
-
-                const div = document.createElement('div');
-                div.className = 'appointment';
-                div.innerHTML = `
-                    <h4>${item.cliente_nome}</h4>
-                    <p>${item.observacao || 'Sem observação'}</p>
-                    <p class="appointment-time">${item.data} • ${item.horario}</p>
-                `;
-                list.appendChild(div);
-            });
-        } else {
-            list.innerHTML = `<p style="text-align:center;color:#777;">${data.msg}</p>`;
-        }
-
-    } catch (error) {
-        console.error(error);
-        document.getElementById('agenda-list').innerHTML =
-            `<p style="text-align:center;color:#777;">Erro ao carregar agendamentos.</p>`;
-    }
-}
-
-carregarAgenda();
-</script>
-
 <div class="line"></div>
 
-    <nav>
-          <div class="icon">
-            <img src="../../src/assets/category.png" alt="">
-            <p>Dashboard</p>
-          </div>
-        <a href="calendario.php">
-          <div class="icon">
-            <img src="../../src/assets/setting-2.png" alt="">
-            <p>Calendario</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="icon">
-            <img src="../../src/assets/message.png" alt="">
-            <p>Mensagens</p>
-          </div>
-        </a>
-        <a href="agendaAdmin.php">
-            <div class="icon">
-                <img src="../../src/assets/setting-2.png" alt="">
-                <p>Configurações</p>
-            </div>
-        </a>
-    </nav>
+<?php include '../../src/includes/menuAdmin.php'?>
 
     <script src="../../src/script/proximoAgendamento.js"></script>
+    <script src="../../src/script/listarAgenda.js"></script>
 </body>
 </html>

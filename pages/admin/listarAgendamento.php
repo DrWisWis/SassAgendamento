@@ -38,5 +38,5 @@ if ($result && $result->num_rows > 0) {
     }
     echo json_encode(['success' => true, 'agendamentos' => $agendamentos]);
 } else {
-    echo json_encode(['success' => false, 'msg' => 'Nenhum agendamento encontrado.']);
+    echo json_encode(['success' => false, 'msg' => 'Nenhum agendamento encontrado para hoje.']);
 }

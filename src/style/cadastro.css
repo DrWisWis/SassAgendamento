@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 h1{
@@ -47,6 +48,7 @@ input {
     border-radius: 5px;
     border: solid 1px #dddddd;
     margin-bottom: 20px;
+    padding: 18px;
 }
 
 form button {
