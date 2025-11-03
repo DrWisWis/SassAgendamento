@@ -71,6 +71,7 @@ a {
     font-style: italic;
 }
 
+/* Agenda do adm */
     .agenda-container {
         width: 380px;
         background: #fff;
@@ -129,3 +130,95 @@ a {
         color: #888;
         margin-top: 4px;
     }
+
+
+
+/* Config */
+
+.settings {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+}
+
+/* .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 600;
+}
+
+.tab.active {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+.content {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.dias label {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
