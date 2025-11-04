@@ -34,15 +34,10 @@ if ($result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../src/style/client.css">
 </head>
 <body>
     <h1>Pagina do cliente</h1>
-        <a href="../auth/logout.php">
-        <button style="background:#f44336; color:white; border:none; border-radius:5px; padding:8px 15px; cursor:pointer;">
-            Logout
-        </button>
-    </a>
     <main class="calendar" role="application" aria-label="Calendário">
     <div class="cal-header">
       <div class="nav" aria-hidden="false">
@@ -92,11 +87,14 @@ if ($result) {
 </div>
 
 
+    <?php include '../../src/includes/menuClient.php'?>
+
+
 <script>
 const diasDisponiveis = <?= json_encode(array_keys($horariosDisponiveis)); ?>;
 const horariosDisponiveis = <?= json_encode($horariosDisponiveis); ?>;
 </script>
 
-  <script src="script.js"></script>
+  <script src="../../src/script/agendarCliente.js"></script>
 </body>
 </html>

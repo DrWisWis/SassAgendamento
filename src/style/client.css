@@ -1,5 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background: #fff;
     color: #000;
@@ -8,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    border: solid red 1px;
 }
 
 .calendar {
@@ -34,7 +39,7 @@ button {
 .weekday-row {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
+    gap: 2px;
 }
 
 .day {
